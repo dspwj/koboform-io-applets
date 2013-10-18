@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var formXmlToSave="XML to save goes here should looklike this <xml> </xml>";		
+		
+		function closeSaveToFileDialog()
+		{
+			alert("close file save dialog window");
+			alert(formXmlToSave);
+		}
+	</script>
+</head>
+<h1>test the save applet</h1>
+<br/>
+<br/>
+
+<applet width="650" height="300" 
+	code="org.oyrm.kobo.fileIOApplets.ui.FileSaveApplet.class" 
+	archive="kobo_fileIOApplets.jar, plugin.jar" 
+	codebase="."> 
+	<param name="formName" value="cars"/>
+	<param name="save" value="save"/>
+
+</applet>
+
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var formXmlToLoad = "empty";
+		function closeOpenFromFileDialog()
+		{
+			alert("Just Read in: " + formXmlToLoad);
+		}
+	</script>
+</head>
+<h1>test the open applet</h1>
+<br/>
+<br/>
+
+<applet width="650" height="300" 
+	code="org.oyrm.kobo.fileIOApplets.ui.FileOpenApplet.class" 
+	archive="kobo_fileIOApplets.jar, plugin.jar" 
+	codebase="."> 
+	<param name="open" value="Open"/>
+</applet>
+
+
+</html>

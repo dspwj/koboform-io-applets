@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script type="text/javascript">
+		
+		var formXmlToSave ="Block XML to save goes here";		
+		var blockXmlToSave = "empty";
+		
+		function closeSaveBlockDialog()
+		{
+			alert("close Block save dialog window");
+			alert(blockXmlToSave);
+		}
+		
+	</script>
+</head>
+<h1>test the Save Block applet</h1>
+<br/>
+<br/>
+
+<applet width="650" height="300" 
+	code="org.oyrm.kobo.fileIOApplets.ui.BlockSaveApplet.class" 
+	archive="kobo_fileIOApplets.jar, plugin.jar" 
+	codebase="."> 
+	<param name="formName" value="blocktest"/>
+	<param name="save" value="save"/>
+</applet>
+
+
+</html>

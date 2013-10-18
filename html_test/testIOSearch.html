@@ -1,0 +1,32 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var fileIOErrorMsg = "";
+		var fileIOFileData = "";
+				
+		
+		function fileOperationComplete()
+		{
+			console.log("called");
+			alert("Error Message: " + fileIOErrorMsg);
+			alert("Search Results: " + fileIOFileData);
+		}
+		
+		
+	</script>
+</head>
+<h1>test the open applet</h1>
+<br/>
+<br/>
+
+<applet id="ioApplet" name="ioApplet" width="10" height="10" 
+	code="org.oyrm.kobo.fileIOApplets.library.SearchDirectory.class" 
+	archive="kobo_fileIOApplets.jar, plugin.jar" 
+	codebase="."> 
+	<param name="fileName" value="/home/etherton"/>
+</applet>
+
+<br/>
+
+
+</html>

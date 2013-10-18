@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var itemXmlToLoad = "empty";
+		function importDataFromLibrary()
+		{
+			alert("Just Read in: " + itemXmlToLoad);
+		}
+		
+		function importDataFromLibraryCloseDialog()
+		{
+			alert("Called: importDataFromLibraryCloseDialog");
+		}
+	</script>
+</head>
+<h1>test the open applet</h1>
+<br/>
+<br/>
+
+<applet width="550" height="600" 
+	code="org.oyrm.kobo.fileIOApplets.ui.BlockSearchApplet.class" 
+	archive="kobo_fileIOApplets.jar, plugin.jar" 
+	codebase="."> 
+</applet>
+
+
+</html>
